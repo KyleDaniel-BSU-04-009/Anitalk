@@ -1,0 +1,19 @@
+userpost.php	pfp	pimg	isset	resp	com
+comments.php	pfp			resp	com
+compose.php		pfp			resp	com
+likes.php		pfp	pimg		resp	com
+posts.php		pfp	pimg	isset	resp	com
+user.php		pfp	pimg	isset	resp	com
+settings.php	pfp		isset	resp	com
+login.php				isset	resp	com
+registration.php			isset	resp	com
+
+comment_complete.php	com
+compose_complete.php	com
+edit_complete.php		com
+delete.php			com
+account_delete.php	com
+
+config.php			com
+index.php			com
+logout.php			com

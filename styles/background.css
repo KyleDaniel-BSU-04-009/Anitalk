@@ -1,0 +1,39 @@
+.backgroundWrapper{
+  position:fixed;
+  z-index:-5;
+  width:1536px;
+  height:auto;
+  top:-10em;
+  left:50%;
+  translate:-50% 0%;
+  rotate:45deg;
+}
+.background{
+  width:100%;
+  display:flex;
+  animation:background 60s linear infinite;
+  position:relative;
+  overflow:hidden;
+}
+.masonryColumn{
+  width:20%;
+  height:auto;
+  display:flex;
+  flex-direction:column;
+}
+.masonryColumn:nth-child(even){
+  translate:0px -205px;
+}
+.masonryTile{
+  width:calc(100% - 10px);
+  height:410px;
+  background-color:hsl(var(--mainHue), 50%, 50%);
+  margin:5px;
+  border-radius:var(--bRad);
+  background-size:cover;
+  background-position:center;
+}
+@keyframes background{
+  0%{ top:0em; }
+  100%{ top:-105em; }
+}

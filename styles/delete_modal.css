@@ -1,0 +1,32 @@
+.mainWrapper div:has(.mainModal){
+  position:fixed;
+  top:0;
+  left:0;
+  width:100vw;
+  height:100vh !important;
+  background-color:#000000c2;
+  display:none;
+  justify-content:center;
+  align-items:center;
+  z-index:5;
+}
+.mainModal{
+  width:424px;
+  height:auto;
+  border-radius:var(--bRad);
+  background-color:hsl(var(--mainHue), 30%, 10%);
+  display:flex;
+  flex-direction:column;
+  padding:20px;
+}
+.modalButtons{
+  display:flex;
+  justify-content:space-evenly;
+  align-items:center;
+}
+.yesBtn{
+  filter:var(--rantTag);
+}
+.noBtn{
+  filter:var(--humorTag);
+}

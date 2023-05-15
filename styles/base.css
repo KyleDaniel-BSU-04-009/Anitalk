@@ -1,0 +1,22 @@
+:root{
+  --mainHue:255;
+  --bRad:5px;
+}
+body{
+  margin:0px;
+  background-color:hsl(var(--mainHue), 30%, 2.5%);
+}
+::-webkit-scrollbar {
+  width:5px;
+}
+::-webkit-scrollbar-track {
+  background:#ffffff14;
+  border-radius:20px;
+}
+::-webkit-scrollbar-thumb {
+  background:#ffffff2b;
+  border-radius:20px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background:#ffffff66;
+}

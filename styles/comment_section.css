@@ -1,0 +1,143 @@
+/* comment section */
+.commentSection{
+  background-color:hsl(var(--mainHue), 30%, 10%);
+  width:95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+.commentCompose{
+  width:95%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+.commentSection > hr{
+  width:95%;
+  border:1px solid hsl(var(--mainHue), 70%, 70%);
+  margin:15px 0px;
+}
+
+/* ajax commenting form */
+.commentCompose > textarea{
+  margin-top:15px;
+  resize:vertical;
+  min-height:75px;
+  max-height:200px;
+  padding:10px;
+  width:-webkit-fill-available;
+  border-radius:var(--bRad);
+  background-color:hsl(var(--mainHue), 30%, 2.5%);
+  border:none;
+  color:hsl(var(--mainHue), 70%, 70%);
+}
+.commentCompose > button{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  align-self:end;
+  margin-bottom:0px;
+}
+/* filter */
+.commentsFilter{
+  width:100%;
+}
+
+/* comments feed */
+.commentFeed{
+  width:95%;
+  overflow-x:auto;
+  display:flex;
+  flex-direction:column-reverse;
+}
+.commentFeed::-webkit-scrollbar{
+  display:none;
+}
+.userComment{
+  isolation:isolate;
+  position:relative;
+  padding:15px;
+  margin-top:15px;
+  border-radius:var(--bRad);
+  background-image:linear-gradient(to bottom, hsl(var(--mainHue), 30%, 25%, 70%), hsl(var(--mainHue), 30%, 5%, 70%));
+}
+.commentUserDetails{
+  display:flex;
+  justify-content:space-between;
+}
+.commentUserDetails h3{
+  color:white;
+  height:30px !important;
+}
+.detailGroup{
+  display:flex;
+  align-items:center;
+  padding-bottom:15px;
+}
+.detailGroup p{
+  font-weight:bold;
+  font-size:1.5em;
+  padding-left:15px;
+  filter:drop-shadow(1px 0px 0px hsl(var(--mainHue), 35%, 35%)) drop-shadow(-1px 0px 0px hsl(var(--mainHue), 35%, 35%)) drop-shadow(0px -1px 0px hsl(var(--mainHue), 35%, 35%)) drop-shadow(0px 1px 0px hsl(var(--mainHue), 35%, 35%)) drop-shadow(1px 2px 0px hsl(var(--mainHue), 35%, 35%));
+}
+.commentText{
+  font-family:'Trebuchet MS';
+  padding:15px;
+  padding-top:0px;
+}
+
+/* user profile comment linking */
+.enterComment{
+  cursor:pointer;
+  z-index:1;
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  font-size: 6em;
+  background-image: linear-gradient(to right, transparent, hsl(var(--mainHue), 50%, 50%));
+  border-radius: var(--bRad);
+  opacity: 0;
+  transition:opacity 0.25s ease, left 0.25s ease;
+}
+.userComment:hover .enterComment{
+  opacity:1;
+  left:50%;
+}
+
+@media (width < 1500px){
+  .commentSection{
+    position:absolute;
+    width:50%;
+    left:50%;
+    translate:-50% 0%;
+  }
+  .centerContent{
+    position:absolute;
+    left:50%;
+    translate:-50% 0%;
+  }
+  .rightContent{
+    position:unset;
+  }
+}
+@media (width < 1200px){
+  .commentSection{
+    width:60%;
+  }
+}
+@media (width < 950px){
+  .commentSection{
+    width:70%;
+  }
+}
+@media (width < 650px){
+  .commentSection{
+    width:100%;
+  }
+}

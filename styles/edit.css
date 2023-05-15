@@ -1,0 +1,13 @@
+#edittext{
+  resize:none;
+  width: -webkit-fill-available;
+  background-color: hsl(var(--mainHue), 30%, 2.5%);
+  border-radius: var(--bRad);
+  height: 100px;
+  border:none;
+  color:hsl(var(--mainHue), 70%, 70%);
+  padding:10px;
+}
+#idofcontent{
+  display:none;
+}

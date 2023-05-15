@@ -1,0 +1,99 @@
+.settingsWrapper{
+  position:fixed;
+  z-index:-1;
+  pointer-events:none;
+  height:100vh;
+  width:100vw;
+  display:grid;
+  place-items:center;
+}
+.mainSettings{
+  pointer-events:all;
+  background-color:hsl(var(--mainHue), 30%, 10%);
+  width:425px;
+  height:auto;
+  position:fixed;
+  border-radius:var(--bRad);
+  padding:30px;
+  display:flex;
+  flex-direction:column;
+  justify-content:end;
+}
+.mainSettings > div:not(:first-child){
+  margin-top:25px;
+  display:flex;
+  flex-direction:column;
+}
+.mainSettings >* button{
+  margin:0px;
+}
+.mainSettings >* h1{
+  font-family:Monospace;
+  color:hsl(var(--mainHue), 70%, 70%);
+  padding:0px 0px 15px 0px;
+}
+
+.userContent{
+  position: fixed;
+  width: 268px;
+  left: 25%;
+  top: 50%;
+  z-index: 2;
+  translate: -50% -50%;
+  filter: drop-shadow(0px 0px 10px black);
+  margin: 0px;
+}
+
+.mainSettings > div form{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  margin-block:0px;
+}
+.mainSettings > div form input{
+  height:20px;
+  width:50%;
+  padding:10px;
+  background-color:hsl(var(--mainHue), 30%, 2.5%);
+  color:hsl(var(--mainHue), 70%, 70%);
+  border-radius:var(--bRad);
+  border:none;
+}
+.mainSettings > div form button{
+  width:160px !important;
+}
+input[type="file"]{
+  display:none;
+}
+#inpLabel{
+  width:208px;
+  margin:0px;
+  font-family:Arial;
+}
+
+/* delete & password change settings */
+
+.mainSettings > div:not(:first-child), .mainSettings > div:not(:first-child) button{
+  width:100%;
+}
+.deleteSettings button{
+  color:hsl(0, 50%, 0%);
+  background-color:hsl(0, 100%, 50%);
+  border-bottom:3px solid hsl(0, 90%, 40%) !important;
+}
+.deleteSettings button:hover{
+  filter:drop-shadow(2px 2px 0px hsl(0, 90%, 40%)) drop-shadow(2px 2px 0px hsl(0, 80%, 30%)) drop-shadow(2px 4px 4px black);
+  translate:-2px -2px;
+  border-bottom:none;
+}
+#deleteForm, #passwordForm{
+  display:none;
+}
+.passwordWrapper{
+  width:50%;
+}
+.passwordWrapper input{
+  width:100% !important;
+  margin:7.5px;
+  margin-left:0px;
+}

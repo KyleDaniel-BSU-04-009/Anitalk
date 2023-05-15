@@ -1,0 +1,18 @@
+.sidebarSwitch{
+  position:fixed;
+  z-index:1;
+  margin:15px;
+  border-radius:var(--bRad);
+  background-color:hsl(var(--mainHue), 70%, 70%);
+  height:75px;
+  width:75px;
+  cursor:pointer;
+}
+.siswicon{
+  background-color:hsl(var(--mainHue), 50%, 50%);
+  height:75px;
+  width:75px;
+  display:block;
+  scale:0.8;
+  clip-path:polygon(0 0, 100% 0, 60% 50%, 60% 100%, 40% 90%, 40% 50%);
+}
